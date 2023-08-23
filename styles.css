@@ -1,0 +1,91 @@
+/* Calculator Container */
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #f06, #f90); 
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+  
+  /* Display */
+  #display {
+    grid-column: 1 / span 3;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 24px;
+    text-align: right;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Equal sign styling */
+  #equals {
+    grid-column: 4; 
+    background-color: #ff5825; /* Orange */
+    font-size: 24px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Change color on hover */
+  #equals:hover {
+    background-color: #e64a19; /* Darker Orange */
+  }
+  
+  /* Buttons */
+  button {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #4caf50; /* Green */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Add a fun hover effect */
+  button:hover {
+    background-color: #45a049; /* Darker Green */
+    transform: scale(1.1); /* Slightly zoom in on hover */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); /* Add shadow on hover */
+  }
+  
+  /* Clear button */
+  #clear {
+    background-color: #2196f3; /* Blue */
+  }
+  
+  #clear:hover {
+    background-color: #1e87d3; /* Darker Blue */
+  }
+  
+  /* Cancel button */
+  #cancel {
+    background-color: #2196f3; /* Blue */
+  }
+  
+  #cancel:hover {
+    background-color: #1e87d3; /* Darker Blue */
+  }
+  
+  /* Numeric Buttons */
+  .number-button {
+    background-color: #e0e0e0; /* Light Gray */
+    color: #000;
+  }
+  
+  /* Add a fun hover effect */
+  .number-button:hover {
+    background-color: #ccc; /* Slightly Darker Gray */
+    transform: scale(1.1); /* Slightly zoom in on hover */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  }
+  
